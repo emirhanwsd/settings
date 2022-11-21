@@ -24,7 +24,7 @@ const App = () => (
 
       <div className="w-px h-4 bg-gray-300 ml-2" />
 
-      <span className="text-sm text-gray-600 ml-2">
+      <span className="text-sm text-gray-600 dark:text-zinc-300 ml-2">
         View and update your store details.
       </span>
 
@@ -39,9 +39,9 @@ const App = () => (
     </nav>
 
     <div className="max-w-screen-2xl mx-auto space-y-8">
-      <div className="py-8 border-b flex items-end justify-between">
+      <div className="py-8 border-b dark:border-zinc-800 flex items-end justify-between">
         <div className="flex items-center gap-x-4">
-          <div className="h-14 w-14 border rounded-lg inline-flex items-center justify-center text-lg font-medium hover:bg-gray-50 transition-colors">
+          <div className="h-14 w-14 border dark:border-zinc-800 rounded-lg inline-flex items-center justify-center text-lg font-medium hover:bg-gray-50 transition-colors">
             B
           </div>
 
@@ -52,7 +52,10 @@ const App = () => (
               <ChevronDownIcon className="h-3 w-3" />
             </div>
 
-            <a href="#" className="text-sm text-gray-400 hover:underline">
+            <a
+              href="#"
+              className="text-sm text-gray-400 dark:text-zinc-500 hover:underline"
+            >
               brand.com
             </a>
           </div>
@@ -61,7 +64,7 @@ const App = () => (
         <input
           type="text"
           placeholder="Search settings..."
-          className="rounded-lg text-sm border-gray-300 placeholder:text-gray-600 transition-colors"
+          className="rounded-lg text-sm border-gray-300 dark:border-zinc-800 dark:placeholder:text-zinc-300 dark:bg-zinc-900 placeholder:text-gray-600 transition-colors"
         />
       </div>
 
@@ -69,7 +72,9 @@ const App = () => (
         <h1 className="text-xl font-medium">Settings</h1>
 
         <div className="text-sm inline-flex items-center gap-x-2">
-          <p className="text-gray-600">Edit abilites of Brand.</p>
+          <p className="text-gray-600 dark:text-zinc-300">
+            Edit abilites of Brand.
+          </p>
 
           <a href="#" className="text-indigo-600 font-medium hover:underline">
             Profile Settings
@@ -79,16 +84,16 @@ const App = () => (
         <div className="grid grid-cols-3 gap-8 mt-4">
           <a
             href="#"
-            className="h-20 border rounded-lg shadow-sm p-4 flex items-center gap-x-4 hover:border-indigo-600 transition-colors"
+            className="h-20 border dark:border-zinc-800 rounded-lg shadow-sm p-4 flex items-center gap-x-4 hover:border-indigo-600 dark:hover:border-indigo-600 transition-colors"
           >
-            <div className="h-12 w-12 rounded-lg bg-gray-50 inline-flex items-center justify-center">
+            <div className="h-12 w-12 rounded-lg bg-gray-50 dark:bg-zinc-800 inline-flex items-center justify-center">
               <Cog6ToothIcon className="h-5 w-5" />
             </div>
 
             <div className="text-sm">
               <span className="font-medium">General</span>
 
-              <p className="text-gray-400">
+              <p className="text-gray-400 dark:text-zinc-500">
                 View and update your store details.
               </p>
             </div>
@@ -96,61 +101,69 @@ const App = () => (
 
           <a
             href="#"
-            className="h-20 border rounded-lg shadow-sm p-4 flex items-center gap-x-4 hover:border-indigo-600 transition-colors"
+            className="h-20 border dark:border-zinc-800 rounded-lg shadow-sm p-4 flex items-center gap-x-4 hover:border-indigo-600 dark:hover:border-indigo-600 transition-colors"
           >
-            <div className="h-12 w-12 rounded-lg bg-gray-50 inline-flex items-center justify-center">
+            <div className="h-12 w-12 rounded-lg bg-gray-50 dark:bg-zinc-800 inline-flex items-center justify-center">
               <ReceiptPercentIcon className="h-5 w-5" />
             </div>
 
             <div className="text-sm">
               <span className="font-medium">Billing Plan</span>
 
-              <p className="text-gray-400">View your current plan.</p>
+              <p className="text-gray-400 dark:text-zinc-500">
+                View your current plan.
+              </p>
             </div>
           </a>
 
           <a
             href="#"
-            className="h-20 border rounded-lg shadow-sm p-4 flex items-center gap-x-4 hover:border-indigo-600 transition-colors"
+            className="h-20 border dark:border-zinc-800 rounded-lg shadow-sm p-4 flex items-center gap-x-4 hover:border-indigo-600 dark:hover:border-indigo-600 transition-colors"
           >
-            <div className="h-12 w-12 rounded-lg bg-gray-50 inline-flex items-center justify-center">
+            <div className="h-12 w-12 rounded-lg bg-gray-50 dark:bg-zinc-800 inline-flex items-center justify-center">
               <UserGroupIcon className="h-5 w-5" />
             </div>
 
             <div className="text-sm">
               <span className="font-medium">Team</span>
 
-              <p className="text-gray-400">View and add teammates.</p>
+              <p className="text-gray-400 dark:text-zinc-500">
+                View and add teammates.
+              </p>
             </div>
           </a>
 
           <a
             href="#"
-            className="h-20 border rounded-lg shadow-sm p-4 flex items-center gap-x-4 hover:border-indigo-600 transition-colors"
+            className="h-20 border dark:border-zinc-800 rounded-lg shadow-sm p-4 flex items-center gap-x-4 hover:border-indigo-600 dark:hover:border-indigo-600 transition-colors"
           >
-            <div className="h-12 w-12 rounded-lg bg-gray-50 inline-flex items-center justify-center">
+            <div className="h-12 w-12 rounded-lg bg-gray-50 dark:bg-zinc-800 inline-flex items-center justify-center">
               <ChatBubbleLeftRightIcon className="h-5 w-5" />
             </div>
 
             <div className="text-sm">
               <span className="font-medium">SMS</span>
 
-              <p className="text-gray-400">View and update your SMS choices.</p>
+              <p className="text-gray-400 dark:text-zinc-500">
+                View and update your SMS choices.
+              </p>
             </div>
           </a>
 
           <a
             href="#"
-            className="h-20 border rounded-lg shadow-sm p-4 flex items-center gap-x-4 hover:border-indigo-600 transition-colors"
+            className="h-20 border dark:border-zinc-800 rounded-lg shadow-sm p-4 flex items-center gap-x-4 hover:border-indigo-600 dark:hover:border-indigo-600 transition-colors"
           >
-            <div className="h-12 w-12 rounded-lg bg-gray-50 inline-flex items-center justify-center">
+            <div className="h-12 w-12 rounded-lg bg-gray-50 dark:bg-zinc-800 inline-flex items-center justify-center">
               <CodeBracketIcon className="h-5 w-5" />
             </div>
 
             <div className="text-sm">
               <span className="font-medium">Web Tracking Installation</span>
 
-              <p className="text-gray-400">Insert code above {"<head>"}.</p>
+              <p className="text-gray-400 dark:text-zinc-500">
+                Insert code above {"<head>"}.
+              </p>
             </div>
           </a>
         </div>
@@ -160,7 +173,9 @@ const App = () => (
         <h1 className="text-xl font-medium">Integrations</h1>
 
         <div className="text-sm inline-flex items-center gap-x-2">
-          <p className="text-gray-600">Layer in connections.</p>
+          <p className="text-gray-600 dark:text-zinc-500">
+            Layer in connections.
+          </p>
 
           <a href="#" className="text-indigo-600 font-medium hover:underline">
             See More
@@ -168,7 +183,7 @@ const App = () => (
         </div>
 
         <div className="grid grid-cols-3 gap-8 mt-4">
-          <div className="border rounded-lg shadow-sm p-4 flex flex-col gap-y-4 hover:bg-gray-50 transition-colors">
+          <div className="border dark:border-zinc-800 rounded-lg shadow-sm p-4 flex flex-col gap-y-4 hover:bg-gray-50 dark:hover:bg-zinc-800 transition-colors">
             <div className="h-12 w-12 inline-flex items-center justify-center">
               <img
                 className="h-8 drop-shadow-sm"
@@ -180,14 +195,14 @@ const App = () => (
             <div>
               <span className="font-medium">Shopify</span>
 
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-gray-400 dark:text-zinc-500">
                 View analytics data inside Shopify.
               </p>
             </div>
 
             <a
               href="#"
-              className="inline-flex max-w-max text-sm font-medium items-center gap-x-2 px-4 py-2 rounded-lg border bg-white hover:opacity-80 transition-opacity"
+              className="inline-flex max-w-max text-sm font-medium items-center gap-x-2 px-4 py-2 rounded-lg border bg-white dark:bg-zinc-900 dark:border-zinc-800 hover:opacity-80 transition-opacity"
             >
               <span>Connect</span>
 
@@ -195,7 +210,7 @@ const App = () => (
             </a>
           </div>
 
-          <div className="border rounded-lg shadow-sm p-4 flex flex-col gap-y-4 hover:bg-gray-50 transition-colors">
+          <div className="border dark:border-zinc-800 rounded-lg shadow-sm p-4 flex flex-col gap-y-4 hover:bg-gray-50 dark:hover:bg-zinc-800 transition-colors">
             <div className="h-12 w-12 inline-flex items-center justify-center">
               <img
                 className="h-8 drop-shadow-sm"
@@ -207,14 +222,14 @@ const App = () => (
             <div>
               <span className="font-medium">Twitter</span>
 
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-gray-400 dark:text-zinc-500">
                 View analytics data inside Twitter.
               </p>
             </div>
 
             <a
               href="#"
-              className="inline-flex max-w-max text-sm font-medium items-center gap-x-2 px-4 py-2 rounded-lg border bg-white hover:opacity-80 transition-opacity"
+              className="inline-flex max-w-max text-sm font-medium items-center gap-x-2 px-4 py-2 rounded-lg border bg-white dark:bg-zinc-900 dark:border-zinc-800 hover:opacity-80 transition-opacity"
             >
               <span>Connect</span>
 
@@ -222,7 +237,7 @@ const App = () => (
             </a>
           </div>
 
-          <div className="border rounded-lg shadow-sm p-4 flex flex-col gap-y-4 hover:bg-gray-50 transition-colors">
+          <div className="border dark:border-zinc-800 rounded-lg shadow-sm p-4 flex flex-col gap-y-4 hover:bg-gray-50 dark:hover:bg-zinc-800 transition-colors">
             <div className="h-12 w-12 inline-flex items-center justify-center">
               <img
                 className="h-8 rounded-lg drop-shadow-sm"
@@ -234,14 +249,14 @@ const App = () => (
             <div>
               <span className="font-medium">Stripe</span>
 
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-gray-400 dark:text-zinc-500">
                 View analytics data inside Stripe.
               </p>
             </div>
 
             <a
               href="#"
-              className="inline-flex max-w-max text-sm font-medium items-center gap-x-2 px-4 py-2 rounded-lg border bg-white hover:opacity-80 transition-opacity"
+              className="inline-flex max-w-max text-sm font-medium items-center gap-x-2 px-4 py-2 rounded-lg border bg-white dark:bg-zinc-900 dark:border-zinc-800 hover:opacity-80 transition-opacity"
             >
               <span>Connect</span>
 
@@ -249,7 +264,7 @@ const App = () => (
             </a>
           </div>
 
-          <div className="border rounded-lg shadow-sm p-4 flex flex-col gap-y-4 hover:bg-gray-50 transition-colors">
+          <div className="border dark:border-zinc-800 rounded-lg shadow-sm p-4 flex flex-col gap-y-4 hover:bg-gray-50 dark:hover:bg-zinc-800 transition-colors">
             <div className="h-12 w-12 inline-flex items-center justify-center">
               <img
                 className="h-8 rounded-lg drop-shadow-sm"
@@ -261,14 +276,14 @@ const App = () => (
             <div>
               <span className="font-medium">Instagram</span>
 
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-gray-400 dark:text-zinc-500">
                 View analytics data inside Instagram.
               </p>
             </div>
 
             <a
               href="#"
-              className="inline-flex max-w-max text-sm font-medium items-center gap-x-2 px-4 py-2 rounded-lg border bg-white hover:opacity-80 transition-opacity"
+              className="inline-flex max-w-max text-sm font-medium items-center gap-x-2 px-4 py-2 rounded-lg border bg-white dark:bg-zinc-900 dark:border-zinc-800 hover:opacity-80 transition-opacity"
             >
               <span>Connect</span>
 
@@ -276,7 +291,7 @@ const App = () => (
             </a>
           </div>
 
-          <div className="border rounded-lg shadow-sm p-4 flex flex-col gap-y-4 hover:bg-gray-50 transition-colors">
+          <div className="border dark:border-zinc-800 rounded-lg shadow-sm p-4 flex flex-col gap-y-4 hover:bg-gray-50 dark:hover:bg-zinc-800 transition-colors">
             <div className="h-12 w-12 inline-flex items-center justify-center">
               <img
                 className="h-8 drop-shadow-sm"
@@ -288,14 +303,14 @@ const App = () => (
             <div>
               <span className="font-medium">Facebook</span>
 
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-gray-400 dark:text-zinc-500">
                 View analytics data inside Facebook.
               </p>
             </div>
 
             <a
               href="#"
-              className="inline-flex max-w-max text-sm font-medium items-center gap-x-2 px-4 py-2 rounded-lg border bg-white hover:opacity-80 transition-opacity"
+              className="inline-flex max-w-max text-sm font-medium items-center gap-x-2 px-4 py-2 rounded-lg border bg-white dark:bg-zinc-900 dark:border-zinc-800 hover:opacity-80 transition-opacity"
             >
               <span>Connect</span>
 
@@ -303,8 +318,8 @@ const App = () => (
             </a>
           </div>
 
-          <div className="relative border rounded-lg shadow-sm p-4 flex flex-col gap-y-4 hover:bg-gray-50 transition-colors">
-            <span className="absolute bg-green-100 text-green-600 px-2 py-1 right-4 inline-flex max-w-max text-xs font-medium rounded-full">
+          <div className="relative border dark:border-zinc-800 rounded-lg shadow-sm p-4 flex flex-col gap-y-4 hover:bg-gray-50 dark:hover:bg-zinc-800 transition-colors">
+            <span className="absolute bg-green-100 dark:bg-green-900/60 text-green-600 dark:text-green-200 px-2 py-1 right-4 inline-flex max-w-max text-xs font-medium rounded-full">
               Connected
             </span>
 
@@ -319,14 +334,14 @@ const App = () => (
             <div>
               <span className="font-medium">Google</span>
 
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-gray-400 dark:text-zinc-500">
                 View analytics data inside Google.
               </p>
             </div>
 
             <a
               href="#"
-              className="inline-flex max-w-max text-sm font-medium text-red-400 px-4 py-2 rounded-lg border bg-white hover:opacity-80 transition-opacity"
+              className="inline-flex max-w-max text-sm font-medium text-red-400 px-4 py-2 rounded-lg border bg-white dark:bg-zinc-900 dark:border-zinc-800 hover:opacity-80 transition-opacity"
             >
               <span>Disconnect</span>
             </a>

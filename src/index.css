@@ -16,3 +16,9 @@
     font-family: Inter, -apple-system, sans-serif !important;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11" !important;
 }
+
+html.dark{
+    @apply bg-zinc-900 text-zinc-100;
+
+    color-scheme: dark;
+}
